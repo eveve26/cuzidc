@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="container">
+            <input type="text" placeholder="...." id="inputform">
+            <input type="submit" id="submitForm">
+        </div>
+    </body>
+</html>
+
+<script>
+    document.getElementById('submitForm').addEventListener('click', ()=>{
+        alert('我不談政治');
+        document.getElementById('inputform').value='';
+    })
+
+</script>
+
+<style>
+body{
+    background-color: black;
+}
+#container{
+    text-align: center;
+}
+#container input{
+    height: 80px;
+    margin: 20px 10px;
+}
+#inputform{
+    font-size: 50px;
+}
+#submitForm{
+    background-color: blue;
+    font-size: 50px;
+
+}
+#submitForm:hover{
+    background-color: red;
+}
+</style>
